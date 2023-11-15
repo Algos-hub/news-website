@@ -1,0 +1,38 @@
+.card {
+  width: 350px;
+  border-radius: 20px;
+  background-color: #eee;
+  margin-bottom: 30px;
+}
+
+.img {
+  border-radius: 20px;
+}
+
+.source {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text {
+  padding: 10px;
+}
+
+.author {
+  height: fit-content;
+  margin: 20px 0 0 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+
+.redirect {
+  color: black;
+  text-decoration: none;
+}

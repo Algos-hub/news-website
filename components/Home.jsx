@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import NewsCard from "./NewsCard";
+import styles from "@/styles/Home.module.css";
 
 export default function Home() {
   const [newsData, setNewsData] = useState([]);
@@ -12,5 +14,16 @@ export default function Home() {
       });
   }, []);
   console.log(newsData);
-  return <></>;
+  const articles = newsData.map((data, i) => {
+    return <NewsCard key={i} {...data} />;
+  });
+  let style = { height: "300px" };
+  return (
+    <>
+      <div className={styles.imgContainer} style={style}>
+        <img className={styles.img} src="newsBanner.png" alt="" />
+      </div>
+      <div className={styles.cardsContainer}>{articles}</div>
+    </>
+  );
 }
