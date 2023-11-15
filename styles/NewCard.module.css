@@ -1,12 +1,14 @@
 .card {
-  width: 350px;
+  width: 400px;
   border-radius: 20px;
   background-color: #eee;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
 .img {
   border-radius: 20px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .source {
@@ -17,11 +19,16 @@
 
 .text {
   padding: 10px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .author {
   height: fit-content;
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
 }
 
 .info {
@@ -35,4 +42,8 @@
 .redirect {
   color: black;
   text-decoration: none;
+}
+
+.icons {
+  display: flex;
 }

@@ -6,7 +6,7 @@ export default function Home() {
   const [newsData, setNewsData] = useState([]);
   useEffect(() => {
     fetch(
-      "https://newsapi.org/v2/everything?sources=the-verge&apiKey=3740b00674284aedbc06608a4736eb03"
+      "https://newsapi.org/v2/top-headlines?pageSize=15&country=us&apiKey=3740b00674284aedbc06608a4736eb03"
     )
       .then((response) => response.json())
       .then((data) => {
