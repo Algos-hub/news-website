@@ -1,0 +1,70 @@
+.container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+    height: 70px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 10px;
+}
+
+.search {
+    width: 200px;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+.login {
+    padding-right: 20px;
+}
+
+.leftModalContent {
+    background-color: white; /* Adjust the background color as needed */
+    padding: 10px;
+    width: 55px; /* Adjust the width as needed */
+    height: 100vh; /* Adjust the height as needed */
+    text-align: center;
+  }
+
+  .modalContent {
+    margin-top: 15px;
+  }
+
+.mode {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.loginOverlay {
+    background-color: white;
+    padding: 30px;
+    border: 2px solid #ccc; 
+    border-radius: 10px;
+  }
+
+  .loginOverlay form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loginOverlay label {
+    text-align: left;
+    padding: 0.25rem 0;
+  }
+
+  .loginOverlay input {
+    margin: 0.5rem 0;
+  }
+
+
+  
