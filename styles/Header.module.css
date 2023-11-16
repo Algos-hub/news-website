@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--md-ref-palette-primary95);
+  background-color: var(--md-sys-color-primary-container);
   height: 80px;
   width: 100%;
   z-index: 14;
@@ -22,31 +22,14 @@
   padding-left: 10px;
 }
 
-.search {
-  width: 200px;
-  border-radius: 20px;
-  --md-filled-text-field-container-shape: 20px;
-}
-
 .title {
   font-size: 2.5rem;
   min-width: 153px;
+  color: var(--md-sys-color-on-primary-container);
 }
 
 .login {
   padding-right: 20px;
-}
-
-.leftModalContent {
-  background-color: white; /* Adjust the background color as needed */
-  padding: 10px;
-  width: 55px; /* Adjust the width as needed */
-  height: 100%; /* Adjust the height as needed */
-  text-align: center;
-  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
-  -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
-  -o-transition: opacity 0.3s linear, left 0.3s ease-out;
-  transition: opacity 0.3s linear, left 0.3s ease-out;
 }
 
 .modalContent {
@@ -60,7 +43,7 @@
 }
 
 .loginOverlay {
-  background-color: white;
+  background-color: var(--md-sys-color-surface);
   padding: 30px;
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -68,5 +51,30 @@
   flex-direction: column;
   .log {
     margin-left: 10px;
+    color: var(--md-sys-color-on-primary-container);
+  }
+}
+.search {
+  margin-inline: 10px;
+}
+@media (min-width: 840px) {
+  .trending,
+  .loginDrawer {
+    display: none;
+  }
+}
+
+@media (max-width: 840px) {
+  .trendingNav,
+  .login {
+    display: none;
+  }
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .accNav {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -1,9 +1,10 @@
 .card {
   width: 400px;
   border-radius: 20px;
-  background-color: var(--md-ref-palette-neutral-variant90);
+  background-color: var(--md-sys-color-secondary-container);
   margin: 80px;
   margin-inline: 10px;
+  color: var(--md-sys-color-on-secondary-container);
 }
 
 .img {
@@ -58,11 +59,13 @@
 }
 
 .redirect {
-  color: black;
+  color: var(--md-sys-color-on-secondary-container);
   text-decoration: none;
 }
 
 .icons {
   display: flex;
   z-index: 1;
+
+  color: var(--md-sys-color-on-secondary-container);
 }

@@ -374,4 +374,6 @@
   --md-sys-typescale-title-small-font-size: 14px;
   --md-sys-typescale-title-small-line-height: 20px;
   --md-sys-typescale-title-small-letter-spacing: 0.1px;
+
+  --md-outlined-text-field-container-shape: 30px;
 }

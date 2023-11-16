@@ -37,8 +37,11 @@ export const accountsSlice = createSlice({
   name: "accounts",
   initialState,
   reducers: {
-    createAccount(state, action) {},
+    createAccount(state, action) {
+      state.value.accounts.push({ userName: "", password: "" });
+    },
     deleteAccount(state, action) {},
+    logIn(state, action) {},
   },
 });
 export const filterSlice = createSlice({
