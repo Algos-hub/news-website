@@ -1,8 +1,9 @@
 .card {
   width: 400px;
   border-radius: 20px;
-  background-color: #eee;
-  margin: 30px;
+  background-color: var(--md-ref-palette-neutral-variant90);
+  margin: 80px;
+  margin-inline: 10px;
 }
 
 .img {
@@ -19,16 +20,33 @@
 
 .text {
   padding: 10px;
-  min-height: 320px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+.headline {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .author {
-  height: fit-content;
   margin: 20px 0 20px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .info {

@@ -27,7 +27,6 @@ export default function NewsCard(props) {
   const formattedDate = `${String(date.getDate()).padStart(2, "O")}/${String(
     date.getMonth()
   ).padStart(2, "0")}/${date.getFullYear()}`;
-  console.log(formattedDate);
 
   useEffect(() => {
     window.addEventListener("scroll", handleClose);
@@ -57,13 +56,13 @@ export default function NewsCard(props) {
         </div>
         <div className={styles.text}>
           <div className="title">
-            <h2>{title}</h2>
+            <h2 className={styles.headline}>{title}</h2>
             <div className={styles.source}>
               <h4>{source.name}</h4>
               <h4>{formattedDate}</h4>
             </div>
           </div>
-          <div className="description">{description}</div>
+          <div className={styles.description}>{description}</div>
           <div className={styles.info}>
             <h4 className={styles.author}>By: {author}</h4>
             <div className={styles.icons}>

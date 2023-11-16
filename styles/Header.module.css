@@ -3,10 +3,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: burlywood;
-  height: 70px;
+  background-color: var(--md-ref-palette-primary95);
+  height: 80px;
   width: 100%;
   z-index: 14;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
 }
 
 .logo {
@@ -18,10 +24,13 @@
 
 .search {
   width: 200px;
+  border-radius: 20px;
+  --md-filled-text-field-container-shape: 20px;
 }
 
 .title {
   font-size: 2.5rem;
+  min-width: 153px;
 }
 
 .login {
@@ -34,6 +43,10 @@
   width: 55px; /* Adjust the width as needed */
   height: 100%; /* Adjust the height as needed */
   text-align: center;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+  transition: opacity 0.3s linear, left 0.3s ease-out;
 }
 
 .modalContent {
@@ -51,18 +64,9 @@
   padding: 30px;
   border: 2px solid #ccc;
   border-radius: 10px;
-}
-
-.loginOverlay form {
   display: flex;
   flex-direction: column;
-}
-
-.loginOverlay label {
-  text-align: left;
-  padding: 0.25rem 0;
-}
-
-.loginOverlay input {
-  margin: 0.5rem 0;
+  .log {
+    margin-left: 10px;
+  }
 }
