@@ -2,17 +2,8 @@ import React, { useEffect, useState } from "react";
 import NewsCard from "./NewsCard";
 import styles from "@/styles/Home.module.css";
 
-export default function Home() {
+export default function Likes() {
   const [newsData, setNewsData] = useState([]);
-  useEffect(() => {
-    fetch(
-      "https://newsapi.org/v2/top-headlines?pageSize=15&country=us&apiKey=3740b00674284aedbc06608a4736eb03"
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setNewsData(data.articles);
-      });
-  }, []);
 
   const articles = newsData.map((data, i) => {
     return <NewsCard key={i} {...data} />;

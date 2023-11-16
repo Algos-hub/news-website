@@ -1,4 +1,3 @@
-
 .cardsContainer {
   display: flex;
   flex-direction: row;
@@ -6,6 +5,7 @@
   justify-content: space-evenly;
 }
 .imgContainer {
+  margin-top: 80px;
   width: 100%;
   height: 20vh;
   padding: 0;
