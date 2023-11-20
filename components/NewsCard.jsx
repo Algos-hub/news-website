@@ -194,7 +194,6 @@ export default function NewsCard(props) {
                       ? "heart_check"
                       : "favorite"}
                   </span>
-                  <span class="material-symbols-outlined">favorite</span>
                 </md-icon>
               </md-icon-button>
 
@@ -244,8 +243,8 @@ export default function NewsCard(props) {
                           style={{ cursor: "pointer" }}
                         >
                           {book || currentURL.includes("bookmarks")
-                            ? "bookmark_add"
-                            : "bookmark_remove"}
+                            ? "bookmark_remove"
+                            : "bookmark_add"}
                         </span>
                       </md-icon>
                     </ListItemIcon>

@@ -4,6 +4,8 @@ import styles from "@/styles/Home.module.css";
 
 //// Not active yet
 export default function Trending() {
+  const APIKey1 = "3740b00674284aedbc06608a4736eb03";
+  const APIKey2 = "a14ea5887e1e443eadf762e469fe057a";
   const [newsData, setNewsData] = useState([]);
 
   useEffect(() => {
