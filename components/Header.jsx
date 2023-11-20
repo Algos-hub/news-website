@@ -238,7 +238,7 @@ export default function Header({ darkMode, setDarkMode }) {
             <h2>Welcome {displayName}</h2>
           </div>
         </ListItem>
-        <ListItem
+        {/* <ListItem
           key="Profile"
           className={styles.accNav}
           style={{
@@ -255,7 +255,7 @@ export default function Header({ darkMode, setDarkMode }) {
             </md-icon>
             Account
           </md-text-button>
-        </ListItem>
+        </ListItem> */}
 
         {/* Drawer Log In and Sign up buttons will be hidden when logged in OR when window.innerWidth > 840px */}
         {/* Drawer Log In */}
@@ -524,7 +524,7 @@ export default function Header({ darkMode, setDarkMode }) {
         />
 
         {/* Drawer Trending Button */}
-
+        {/* 
         <ListItem
           key="Trending"
           className={styles.trending}
@@ -540,7 +540,7 @@ export default function Header({ darkMode, setDarkMode }) {
               Trending
             </md-text-button>
           </Link>
-        </ListItem>
+        </ListItem> */}
 
         {/* Drawer Bookmarks Button */}
 
@@ -633,7 +633,7 @@ export default function Header({ darkMode, setDarkMode }) {
             </Link>
           </div>
           {/* Search Bar, not currently operational */}
-          <div
+          {/* <div
             className={styles.search}
             style={{
               width: isFocused && windowDimensions.width <= 550 ? "100%" : "",
@@ -658,15 +658,15 @@ export default function Header({ darkMode, setDarkMode }) {
                 </md-icon>
               </md-icon-button>
             </md-outlined-text-field>
-          </div>
+          </div> */}
 
           {/* Trending Nav Button */}
 
-          <div className={styles.trendingNav}>
+          {/* <div className={styles.trendingNav}>
             <Link href="/trending">
               <md-text-button>Trending</md-text-button>
             </Link>
-          </div>
+          </div> */}
         </div>
 
         {/* Nav Login button*/}
