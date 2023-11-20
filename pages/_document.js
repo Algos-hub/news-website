@@ -13,6 +13,12 @@ export default function Document() {
           name="viewport"
           content="initial-scale=1.0, width=device-width "
         />
+        {/* Keeps banner at full width all the time */}
+        <style>
+          {`
+            #__next { width: 100% }
+          `}
+        </style>
       </Head>
       <body style={style}>
         <Main />
