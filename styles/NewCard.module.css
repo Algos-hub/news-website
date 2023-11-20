@@ -1,10 +1,10 @@
 .card {
-  width: 400px;
+  width: 375px;
   border-radius: 20px;
-  background-color: var(--md-sys-color-secondary-container);
+  background-color: var(--md-sys-color-surface-container-highest);
   margin: 80px;
   margin-inline: 10px;
-  color: var(--md-sys-color-on-secondary-container);
+  color: var(--md-sys-color-on-surface-variant);
 }
 
 .img {
@@ -59,13 +59,15 @@
 }
 
 .redirect {
-  color: var(--md-sys-color-on-secondary-container);
+  color: var(--md-sys-color-on-surface);
   text-decoration: none;
+}
+
+.redirect:hover {
+  text-decoration: underline;
 }
 
 .icons {
   display: flex;
   z-index: 1;
-
-  color: var(--md-sys-color-on-secondary-container);
 }

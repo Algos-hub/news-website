@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import NewsCard from "./NewsCard";
 import styles from "@/styles/Home.module.css";
-import { useDispatch } from "react-redux";
 import { goToPage } from "@/pages/reducer/pagination";
-
-// importing material 2 elements
-
+import { useDispatch, useSelector } from "react-redux";
+// Importing material 2 elements
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -22,20 +20,20 @@ const theme = createTheme({
   },
 });
 
-export default function Home() {
-  // Initializing constants
+//// Don't know if this work yet, I, Pedro, reached the request limit for the NewsAPI, but in theory it should work exactly like the Home.jsx component
 
+export default function Trending() {
   const [newsData, setNewsData] = useState([]);
   const [page, setPage] = useState(1);
   const dispatch = useDispatch();
 
-  const URL = `https://newsapi.org/v2/everything?pageSize=12&page=${page}&q=latest&sortBy=publishedAt&apiKey=3740b00674284aedbc06608a4736eb03`;
+  const URL = `https://newsapi.org/v2/top-headlines?pageSize=12&page=${page}&language=en&sortBy=publishedAt&apiKey=3740b00674284aedbc06608a4736eb03`;
 
   // Fetching new page
 
   const handleFetch = (page) => {
     fetch(
-      `https://newsapi.org/v2/everything?pageSize=12&page=${page}&q=latest&sortBy=publishedAt&apiKey=3740b00674284aedbc06608a4736eb03`
+      `https://newsapi.org/v2/top-headlines?pageSize=12&page=${page}&language=en&sortBy=publishedAt&apiKey=3740b00674284aedbc06608a4736eb03`
     )
       .then((response) => response.json())
       .then((data) => {
